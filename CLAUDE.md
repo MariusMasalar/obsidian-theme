@@ -23,18 +23,18 @@ npx grunt sass:unminified sass:minified cssmin concat_css
 
 **Watch mode with hot-reload** (requires `.env` with `OBSIDIAN_PATH`):
 ```
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH" && export $(cat .env | xargs) && npx grunt
+export $(cat .env | xargs) && npx grunt
 ```
 The watch task compiles on save and copies `theme.css` to the vault automatically.
+Obsidian does not need to be restarted — it picks up CSS changes live.
 
 Note: `OBSIDIAN_PATH` must be exported *before* grunt starts — the copy destination is
 evaluated at startup, so `grunt-env` loading it mid-run is too late.
 
-PATH note: node@22 is keg-only. Always prefix with:
+PATH note: node@22 is keg-only. Ensure it's in `~/.zshrc` (it is, as of initial setup):
 ```
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 ```
-Or ensure it's in `~/.zshrc` (it is, as of initial setup).
 
 ## Scss structure
 ```
@@ -52,8 +52,8 @@ src/scss/
 - Minimal plugin philosophy — avoid adding complexity
 
 ## Git setup
-- `upstream` remote → original primary-theme/obsidian repo (for pulling upstream fixes)
-- No `origin` remote yet (private, no remote repo set up)
+- `origin` remote → MariusMasalar/obsidian-theme (private fork, push changes here)
+- `upstream` remote → primary-theme/obsidian (original repo, pull upstream fixes from here)
 
 ## Workflow
 1. Edit `.scss` files in `src/scss/`
