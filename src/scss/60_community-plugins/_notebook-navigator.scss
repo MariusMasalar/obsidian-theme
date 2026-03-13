@@ -14,6 +14,11 @@
     border-radius: var(--editor-border-radius);
 }
 
+// Bottom gap to match the editor pane's spacing from the window edge
+.mod-left-split .workspace-tab-container:has(.workspace-leaf-content[data-type="notebook-navigator"]) {
+    padding-bottom: var(--editor-pane-margin);
+}
+
 // Add breathing room between the top border and the toolbar icons
 .workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane-chrome {
     padding-top: calc(var(--editor-pane-margin) / 2);
