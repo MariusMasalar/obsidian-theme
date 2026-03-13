@@ -1012,7 +1012,7 @@ body {
   --file-tab-gap: 0px;
   --tab-status-radius: var(--radius-s);
   --new-tab-btn-radius: 2em;
-  --editor-pane-margin: 10px;
+  --editor-pane-margin: 14px;
   --editor-border-radius: var(--radius-l);
   /* Headings */
   --h1-weight: var(--font-semibold);
@@ -3147,6 +3147,7 @@ body.ribbon-slideout:not(.is-mobile):not(.is-hidden-frameless.is-frameless) .sid
 }
 
 body:not(.is-mobile) .workspace-split .workspace-sidedock-vault-profile.workspace-sidedock-vault-profile {
+  display: none;
   width: unset;
   background: var(--vault-name-background);
   padding: var(--size-2-2) var(--size-2-2);
@@ -7131,6 +7132,10 @@ body.alt-folder-icons .nav-folder .tree-item-icon:not(.is-collapsed) svg.right-t
 .workspace-leaf-content[data-type=notebook-navigator] {
   border: var(--editor-border-width) solid var(--editor-border-color);
   border-radius: var(--editor-border-radius);
+}
+
+.mod-left-split .workspace-tab-container:has(.workspace-leaf-content[data-type=notebook-navigator]) {
+  padding-bottom: var(--editor-pane-margin);
 }
 
 .workspace-leaf-content[data-type=notebook-navigator] .nn-list-pane-chrome {
