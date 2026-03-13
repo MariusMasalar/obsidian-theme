@@ -1,0 +1,20 @@
+/*────────── Notebook Navigator ──────────*/
+
+// Give the Notebook Navigator list pane the same floating card
+// treatment as the editor pane.
+.workspace-leaf:has(.workspace-leaf-content[data-type="notebook-navigator"]) {
+    border-radius: var(--editor-border-radius);
+    overflow: hidden;
+    margin: 0 var(--editor-pane-margin);
+    flex: 1;
+}
+
+.workspace-leaf-content[data-type="notebook-navigator"] {
+    border: var(--editor-border-width) solid var(--editor-border-color);
+    border-radius: var(--editor-border-radius);
+}
+
+// Add breathing room between the top border and the toolbar icons
+.workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane-chrome {
+    padding-top: calc(var(--editor-pane-margin) / 2);
+}

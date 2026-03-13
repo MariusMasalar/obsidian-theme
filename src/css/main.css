@@ -7120,6 +7120,23 @@ body.alt-folder-icons .nav-folder .tree-item-icon:not(.is-collapsed) svg.right-t
   opacity: var(--button-opacity-active);
 }
 
+/*────────── Notebook Navigator ──────────*/
+.workspace-leaf:has(.workspace-leaf-content[data-type=notebook-navigator]) {
+  border-radius: var(--editor-border-radius);
+  overflow: hidden;
+  margin: 0 var(--editor-pane-margin);
+  flex: 1;
+}
+
+.workspace-leaf-content[data-type=notebook-navigator] {
+  border: var(--editor-border-width) solid var(--editor-border-color);
+  border-radius: var(--editor-border-radius);
+}
+
+.workspace-leaf-content[data-type=notebook-navigator] .nn-list-pane-chrome {
+  padding-top: calc(var(--editor-pane-margin) / 2);
+}
+
 /*────────── Style Settings by mgmeyers ──────────*/
 .workspace-leaf-content[data-type=style-settings] .view-content > div {
   width: var(--file-line-width);
