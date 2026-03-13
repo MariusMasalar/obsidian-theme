@@ -114,3 +114,9 @@ body.ribbon-slideout:not(.is-mobile) {
         }
     }
 }
+
+// Hide the left sidebar tab switcher icons (Files, Search, Notebook Navigator)
+// from the title bar — these views are accessible via keyboard shortcuts.
+.workspace-tabs.mod-top-left-space .workspace-tab-header-container-inner {
+    display: none;
+}
