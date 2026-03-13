@@ -3362,6 +3362,15 @@ body.sb-word-count-only .status-bar-item:not(.plugin-word-count) {
   display: none;
 }
 
+.status-bar {
+  right: calc(var(--editor-pane-margin) * 2 - 6px);
+  bottom: calc(var(--editor-pane-margin) * 2);
+  --status-bar-radius: var(--editor-border-radius);
+  --status-bar-border-width: var(--editor-border-width);
+  --status-bar-background: var(--status-bar-floating-bg);
+  box-shadow: var(--status-bar-floating-shadow);
+}
+
 /*────────── Window Frame ──────────*/
 .workspace,
 .workspace-ribbon.mod-left.is-collapsed,

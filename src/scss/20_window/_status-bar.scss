@@ -152,3 +152,14 @@ body.sb-word-count-only {
         display: none;
     }
 }
+
+// Float the status bar as a pill, inset from the window edge to match
+// the editor card's spacing and border treatment.
+.status-bar {
+    right: calc(var(--editor-pane-margin) * 2 - 6px);
+    bottom: calc(var(--editor-pane-margin) * 2);
+    --status-bar-radius: var(--editor-border-radius);
+    --status-bar-border-width: var(--editor-border-width);
+    --status-bar-background: var(--status-bar-floating-bg);
+    box-shadow: var(--status-bar-floating-shadow);
+}
