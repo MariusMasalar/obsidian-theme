@@ -20,6 +20,7 @@
 // Vault Profile
 body:not(.is-mobile) .workspace-split {
     .workspace-sidedock-vault-profile.workspace-sidedock-vault-profile {
+        display: none;
         width: unset;
         background: var(--vault-name-background);
         padding: var(--size-2-2) var(--size-2-2);

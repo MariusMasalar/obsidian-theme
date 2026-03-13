@@ -50,6 +50,7 @@ src/scss/
 - Font: SN Pro (custom, not bundled with theme)
 - Appreciates the "whimsy" of Primary — don't strip personality when fixing bugs
 - Minimal plugin philosophy — avoid adding complexity
+- Tone should be lively but wise; approachable and friendly.
 
 ## Git setup
 - `origin` remote → MariusMasalar/obsidian-theme (private fork, push changes here)
