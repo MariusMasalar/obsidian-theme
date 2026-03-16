@@ -1,0 +1,13 @@
+/*────────── Excalidraw ──────────*/
+
+// Excalidraw reads --background-primary via JS to paint the canvas background.
+// Shadow the variable within the Excalidraw scope so the canvas uses the
+// panel chrome colour (--background-secondary) instead of the lighter editor colour.
+.excalidraw {
+    --background-primary: var(--background-secondary);
+}
+
+// Remove the top gap caused by the view-header inside the editor card.
+.workspace-leaf-content[data-type="excalidraw"] .view-header {
+    display: none;
+}

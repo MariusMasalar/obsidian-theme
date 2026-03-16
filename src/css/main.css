@@ -7151,8 +7151,18 @@ body.alt-folder-icons .nav-folder .tree-item-icon:not(.is-collapsed) svg.right-t
   padding-bottom: var(--editor-pane-margin);
 }
 
-.workspace-leaf-content[data-type=notebook-navigator] .nn-list-pane-chrome {
+.workspace-leaf-content[data-type=notebook-navigator] .nn-list-pane-chrome,
+.workspace-leaf-content[data-type=notebook-navigator] .nn-navigation-pane-chrome {
   padding-top: calc(var(--editor-pane-margin) / 2);
+}
+
+/*────────── Excalidraw ──────────*/
+.excalidraw {
+  --background-primary: var(--background-secondary);
+}
+
+.workspace-leaf-content[data-type=excalidraw] .view-header {
+  display: none;
 }
 
 /*────────── Style Settings by mgmeyers ──────────*/

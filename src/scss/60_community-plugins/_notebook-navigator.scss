@@ -19,7 +19,11 @@
     padding-bottom: var(--editor-pane-margin);
 }
 
-// Add breathing room between the top border and the toolbar icons
-.workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane-chrome {
-    padding-top: calc(var(--editor-pane-margin) / 2);
+// Add breathing room between the top border and the toolbar icons,
+// and keep both pane headers vertically aligned with each other.
+.workspace-leaf-content[data-type="notebook-navigator"] {
+    .nn-list-pane-chrome,
+    .nn-navigation-pane-chrome {
+        padding-top: calc(var(--editor-pane-margin) / 2);
+    }
 }
