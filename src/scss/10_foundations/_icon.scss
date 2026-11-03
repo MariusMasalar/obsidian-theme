@@ -18,8 +18,7 @@ body:is(.is-phone, .is-mobile) {
         --icon-size: var(--icon-m);
     }
 
-    .workspace-drawer-active-tab-icon,
-    .workspace-drawer-tab-option-item-icon {
+    .workspace-drawer-active-tab-icon {
         --icon-size: var(--icon-m);
         color: var(--icon-color);
     }

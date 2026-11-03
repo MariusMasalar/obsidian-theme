@@ -16,7 +16,7 @@ button:not(button.clickable-icon) {
     }
 
     &:focus-visible {
-        background: var(--interactive-normal-hover);
+        background: var(--interactive-hover);
         box-shadow: var(--button-shadow-focus);
     }
 

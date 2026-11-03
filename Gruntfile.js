@@ -95,7 +95,6 @@ module.exports = function(grunt) {
                 files: {
                     'Primary.css': [
                         'src/css/readme.css',
-                        'src/css/fonts/*.css',
                         'src/css/main.min.css',
                         'src/css/style-settings.css'
                     ]
@@ -105,7 +104,6 @@ module.exports = function(grunt) {
                 files: {
                     'theme.css': [
                         'src/css/readme.css',
-                        'src/css/fonts/*.css',
                         'src/css/main.min.css',
                         'src/css/style-settings.css'
                     ]

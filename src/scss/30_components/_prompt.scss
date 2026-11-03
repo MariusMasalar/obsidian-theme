@@ -15,7 +15,6 @@ input.prompt-input:focus-visible {
 
 // prompt for adding Tags, linking Files
 .suggestion-container:not([data-popper-placement]),
-.suggestion-popover,
 .popover {
     animation: var(--anim-popup);
 }

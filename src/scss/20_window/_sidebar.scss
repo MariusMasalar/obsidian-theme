@@ -99,28 +99,9 @@ body:not(.is-mobile) .workspace-split {
         }
     }
 
-    &-tab-option-item {
-        text-transform: capitalize;
-        padding: var(--size-4-4) var(--size-4-2);
-    }
-
     .nav-header {
         padding-left: var(--size-4-3);
         padding-right: var(--size-4-3);
-    }
-}
-
-.workspace-drawer-active-tab-header.tappable {
-    text-transform: capitalize;
-    padding:    var(--size-4-2)
-                var(--size-4-3)
-                calc(var(--size-4-2) + var(--button-inset-shadow-size));
-    box-shadow: var(--button-shadow);
-    margin-top: var(--size-2-2);
-    border-radius: calc(var(--radius-m) + 2px);
-
-    &:focus-within {
-        box-shadow: var(--button-shadow-focus);
     }
 }
 

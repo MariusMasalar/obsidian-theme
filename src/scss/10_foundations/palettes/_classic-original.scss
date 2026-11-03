@@ -111,6 +111,8 @@ body {
     --cursor: pointer;
 
     /* Font */
+    // Inter ships with Obsidian (1.11+) and Cascadia Code is used if installed,
+    // so neither is embedded in the theme
     --font-interface-theme: 'Inter';
     --font-text-theme: 'Inter';
     --font-monospace-theme: 'Cascadia Code';
@@ -892,6 +894,9 @@ body {
     --language-chbx-color: hsla(7, 59%, 64%, 1);
     --clock-chbx-color: hsla(210, 39%, 49%, 1);
     --telephone-chbx-color: hsla(148, 47%, 47%, 1);
+    --fire-chbx-color: var(--important-chbx-color);
+    --win-chbx-color: var(--star-chbx-color);
+    --key-chbx-color: var(--idea-chbx-color);
 
     /* Drag Ghost */
     --drag-ghost-background: var(--interactive-accent);
@@ -1594,6 +1599,8 @@ body {
         --color-text-weeknum: var(--color-l-gray-80);
 
         --pmr-cal-day-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+
+        --pmr-cal-day-shadow-active: var(--pmr-cal-day-shadow);
         --pmr-cal-day-shadow-hover:  inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1),
                                     0px 0px 4px 0px rgba(0, 0, 0, 0.05);
         --pmr-cal-day-color-active: var(--color-l-gray-80);
@@ -2020,6 +2027,9 @@ body {
     --language-chbx-color: hsla(7, 63%, 62%, 1);
     --clock-chbx-color: hsla(210, 39%, 52%, 1);
     --telephone-chbx-color: hsla(148, 48%, 42%, 1);
+    --fire-chbx-color: var(--important-chbx-color);
+    --win-chbx-color: var(--star-chbx-color);
+    --key-chbx-color: var(--idea-chbx-color);
 
     /* Drag Ghost */
     --drag-ghost-background: var(--interactive-accent);
@@ -2748,6 +2758,8 @@ body {
         --color-text-weeknum: var(--color-d-gray-60);
 
         --pmr-cal-day-shadow:  inset 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+
+        --pmr-cal-day-shadow-active: var(--pmr-cal-day-shadow);
         --pmr-cal-day-shadow-hover:  inset 0px 0px 0px 1px rgba(0, 0, 0, 0.25),
                                     0px 0px 4px 0px rgba(0, 0, 0, 0.2);
         --pmr-cal-day-color-active: var(--color-d-gray-50);
