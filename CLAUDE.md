@@ -52,6 +52,12 @@ src/scss/
 - Minimal plugin philosophy — avoid adding complexity
 - Tone should be lively but wise; approachable and friendly.
 
+## Auditing against a new Obsidian version
+Obsidian's live stylesheet and JS are inside `/Applications/Obsidian.app/Contents/Resources/obsidian.asar`, a plain asar (uint32 header size at byte 12, JSON header from byte 16, file data at 8 + uint32@4). A ~10-line node script extracts `app.css` and `app.js`; diff the theme's `var(--…)` references and compiled selectors against them to find dead selectors and undefined variables. This beats the changelog, which rarely names classes.
+- Some classes are built from templates (`Ka(side, "mod-{side}-split")` emits both `mod-primary-split` and `mod-left-split`), so a missing literal isn't proof a class is dead.
+- `grep` in this shell is ugrep (chokes on `{0,200}`); use `/usr/bin/grep`, and remember BSD grep reads `\s` as a literal `s`.
+- Last full audit: Nov 2 2026, against Obsidian 1.15.0.
+
 ## Git setup
 - `origin` remote → MariusMasalar/obsidian-theme (private fork, push changes here)
 - `upstream` remote → primary-theme/obsidian (original repo, pull upstream fixes from here)
